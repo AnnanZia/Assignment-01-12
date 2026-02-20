@@ -3,6 +3,7 @@ import java.util.Scanner;
 /** Grocery management system using parallel arrays. */
 public class GroceryManager {
 
+    /** Runs the menu loop. */
     public static void main(String[] args) {
         String[] itemNames = new String[10];
         double[] itemPrices = new double[10];
