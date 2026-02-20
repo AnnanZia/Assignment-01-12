@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 
 /** Grocery management system using parallel arrays. */
 public class GroceryManager {
 
     /** Runs the menu loop. */
+=======
+public class GroceryManager {
+>>>>>>> feature-restock
     public static void main(String[] args) {
         String[] itemNames = new String[10];
         double[] itemPrices = new double[10];
         int[] itemStocks = new int[10];
+<<<<<<< HEAD
 
         Scanner sc = new Scanner(System.in);
 
@@ -52,10 +57,21 @@ public class GroceryManager {
     public static void restockItem(String[] names, int[] stocks, String target, int amount) {
         for (int i = 0; i < names.length; i++) {
             if (names[i] != null && names[i].equals(target)) {
+=======
+    }
+    
+    public static void restockItem(String[] names, int[] stocks, String target, int amount){
+        for (int i = 0; i < names.length; i++) {
+            if (names[i] != null && names[i].equals(target)){
+>>>>>>> feature-restock
                 stocks[i] += amount;
                 return;
             }
         }
         System.out.println("Item not found.");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> feature-restock
