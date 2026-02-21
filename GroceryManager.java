@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
-/** Grocery management system using parallel arrays. */
+/**
+ * GroceryManager is a grocery management system that uses
+ * parallel arrays to store item names, prices, and stock quantities.
+ * 
+ * The program allows users to view the inventory, restock items,
+ * and exit through a menu-driven interface.
+ *
+ */
 public class GroceryManager {
 
     /** Runs the menu loop. */
@@ -56,12 +63,7 @@ public class GroceryManager {
 
     /**
      * Increases the stock quantity of an existing grocery item.
-     * <p>
-     * The method searches for the given item name in the array.
-     * If a matching item is found, its corresponding stock value is increased
-     * by the specified amount. If the item does not exist in the inventory,
-     * an error message is printed.
-     *
+     * 
      * @param names  an array containing the names of grocery items
      * @param stocks an array containing stock quantities corresponding to each item
      * @param target the name of the item to restock
